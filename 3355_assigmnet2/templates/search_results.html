@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results for "{{ search_term }}"</title>
+</head>
+<body>
+    <h1>Search Results for "{{ search_term }}"</h1>
+    {% if results %}
+        {% for product in results %}
+            <div>
+                <img src="{{ url_for('static', filename='images/' + product.image) }}" alt="{{ product.description }}">
+                <p>Product No: {{ product.product_no }}</p>
+                <p>Description: {{ product.description }}</p>
+                <p>Price: ${{ product.price }}</p>
+                <p>Category: {{ product.category.name }}</p>
+                <a href="{{ url_for('product_detail', product_id=product.id) }}">View Details</a>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>No results found for "{{ search_term }}"</p>
+    {% endif %}
+    <a href="{{ url_for('home') }}">Back to Home</a>
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        .divozellik {
+            width: 100%;
+            height: 100%;
+            background-color: #E0BFB8;
+        }
+
+        .tl {
+            color: orangered;
+        }
+
+        .card {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    
+
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">
+                <img src="trendyol_logo.png" alt="Bootstrap" width="210" height="35.75">
+            </a>
+            <nav class="navbar bg-body-tertiary">
+
+                <form class="d-flex"   action="{{ url_for('search') }}"  method="POST" >
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit"><a href=""><i
+                                class="fa-solid fa-magnifying-glass"></i></a></button>
+                </form>
+            </nav>
+            <h5> <i class="fa-solid fa-user"></i>Hesabım</h5>
+            <h5><i class="fa-regular fa-heart"></i>Favorilerim </h5>
+            <h5><i class="fa-solid fa-cart-shopping"></i>Sepetim</h5>
+
+    </nav>
+    <div class="divozellik">
+        <h3>Çok Satılan Ürünler</h3>
+        <div class="row">
+            <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                    <a href="siyahinci.html"><img src="siyah inci.png" class="card-img-top" alt=""></a>
+                    <div class="card-body">
+
+                        <h5 class="card-title">Siyah İnci</h5>
+
+                        <p class="card-text"> Siyah - beyaz Pamuklu Düğmeli Biyeli pijama Takımı</p>
+
+                        <div class="tl">185,91 TL </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                    <a href="trendolmilla.html"><img src="siyahtopar.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+
+                        <h5 class="card-title">TRENDYOLMİLLA</h5>
+
+                        <p class="card-text">Siyah Tporalayıcı Belii Lastikli</p>
+
+                        <div class="tl">193,99 TL </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                    <a href="kadınpolo.html"><img src="kadınpolo.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+
+                        <h5 class="card-title">EnModaStyle</h5>
+
+                        <p class="card-text"> Natiha Outdoors Kadın PoloYaka Çizgili Kazak</p>
+
+                        <div class="tl">145 TL </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                    <a href="FV.html"><img src="fvpantolon.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+
+                        <h5 class="card-title">FV</h5>
+
+                        <p class="card-text">Plazzo Pantolon Oversize Orjinal Kesim</p>
+
+                        <div class="tl">249,99 TL</div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                    <a href="armonika.html"><img src="armonikagömlek.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+
+                        <h5 class="card-title">armonika</h5>
+
+                        <p class="card-text">KadınSiyah desenli Oversize Gömlek</p>
+
+                        <div class="tl">162,95 TL </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                    <a href="trnd.html"><img src="Trendnakış.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+
+                        <h5 class="card-title">TRND</h5>
+
+                        <p class="card-text">NakışlıGömlek</p>
+
+                        <div class="tl">440 TL </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                    <a href="arm.html"><img src="arm_.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+
+                        <h5 class="card-title">armonika</h5>
+
+                        <p class="card-text">Oversize Uzun Basic Gömlek-Beyaz</p>
+
+                        <div class="tl">169 TL </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                    <a href="guitar.html"><img src="guitar.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+
+                        <h5 class="card-title">Guitar</h5>
+
+                        <p class="card-text">Hakim Yaka aş Dokuma Gömlek </p>
+
+                        <div class="tl">2.925 TL </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                    <a href="hakke.html"><img src="Hakke.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+
+                        <h5 class="card-title">HAKKE</h5>
+
+                        <p class="card-text">Kadın Beyaz Oversize Basic Gömlek </p>
+
+                        <div class="tl">159 TL </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                    <a href="grenj.html"><img src="son.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+
+                        <h5 class="card-title">Grenj Fashion</h5>
+
+                        <p class="card-text">Siyah Oversize Deri Gömlek </p>
+
+                        <div class="tl">264 TL </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
